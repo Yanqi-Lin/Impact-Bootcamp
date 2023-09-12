@@ -1,0 +1,176 @@
+/* CSS reset */
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+    min-width: 1100px;
+    background-color: #e2dddd;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+  }
+  
+  ol, ul {
+    list-style: none;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+/* 复用部分 */
+.main-container{
+    width: 80%;
+    margin: 0 auto;
+}
+.content-box{
+    background-color: white;
+    border-radius: 5px;
+    margin: 20px 0;
+    padding: 20px 0; 
+}
+.content-box:hover{
+    box-shadow: 0px 0px 4px 2px pink;
+}
+.box-title{
+    font-size: 25px;
+    border-left: 20px solid pink;
+    padding-left: 20px;
+    overflow: hidden;
+}
+.box-title::after{
+    display: block;
+    float: right;
+    margin-right: 10px;
+    content:'\0020';
+    border-bottom: 1px solid #989898;
+    width: 86%;
+    height: 18px;
+}
+.table-row{
+    display: flex;
+    justify-content:space-between;
+}
+.table-row-item{
+    width: 50%;
+    display: flex;
+}
+.table-row-item .type {
+    flex-basis: 25%;
+}
+
+/* header */
+header{
+    background-color: #fdd1e1;
+    padding: 40px 0;
+}
+.movie-title{
+    font-size: 40px;
+}
+.movie-subtitle{
+    color: rgb(57, 56, 56);
+    margin-top: 15px;
+}
+.header-images{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.header-images-item{
+    width: 32%;
+    border-radius: 5px;
+}
+
+/* content */
+/* summary */
+.summary{
+    overflow: hidden;
+    padding: 20px 10px;    
+}
+.summary-poster{
+    float:right;
+    width: 220px;
+    margin-left: 10px;
+}
+.likes-stars{
+    display: flex;
+    flex-direction: row-reverse;
+    font-size: 14px;
+}
+.likes-stars-item{
+    margin-left: 20px;
+}
+.likes-stars-item .item-title{
+    color: #f31e6c;
+    margin-right: 5px;
+}
+.likes-stars-item .item-number{
+    color: #515050;
+}
+.summary-intro-text{
+    margin-top: 30px;
+}
+.summary-intro-text-item{
+    line-height: 30px;
+    text-indent: 2em;
+}
+.summary-table{
+    margin-top: 30px;
+}
+.summary-table .table-row{
+    margin-bottom: 20px;
+}
+.summary-table .table-row-item .type {
+    font-weight:bolder;
+}
+/* basic-info */
+.info-table{
+    padding: 10px 20px;
+}
+.info-table .table-row{
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 1px dotted #515050 ;
+}
+.info-table .table-row-item .type {
+    color: #5b5959;
+}
+/* actors */
+.actor-wrapper{
+    padding: 15px;
+}
+.actor-item{
+    padding: 20px 0;
+    border-bottom: 1px solid #979797;
+    overflow: hidden;
+}
+.actor-img{
+    float: left;
+    width: 120px;
+    margin-right: 15px;
+}
+.char-name{
+    color: #cc024c;
+    font-size: 20px;
+    padding: 10px 0;
+}
+.actor-name{
+    font-size: 14px;
+    padding: 10px 0;
+}
+.actor-name .job{
+    color: #515050;
+    margin-right: 15px;
+}
+.last-one {
+    padding-bottom:0;
+    border-bottom: 0;
+}

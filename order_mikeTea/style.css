@@ -1,0 +1,131 @@
+/* 公共样式 */
+.main-container{
+    width: 80%;
+    margin: 0 auto;
+}
+input{
+    box-sizing: border-box;
+}
+/* 全局 */
+html{
+    scroll-behavior: smooth;
+}
+body{
+    min-width: 600px;
+    font-size: 1.2em;
+    font-size: 16px;
+}
+/* header */
+.brand-order{
+    background-color: #269ba4;
+    color: white;
+}
+.brand-order-title{
+    height: auto;
+    font-size: 1.3em;
+    text-align: center;
+    padding: 5px;
+}
+
+/* nav */
+.nav{
+    background-color: #c0dcdc;
+}
+.nav-photo{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    padding: 30px 5px;
+}
+.nav-photo-item{
+    width: 0px;
+    flex-basis: 20%;
+    border-radius: 10%;
+    transition: transform 0.4s ease;
+}
+.nav-photo-item:hover{
+    transform: rotate(20deg);
+}
+
+/* form */
+.form-container{
+    padding-top: 20px;
+}
+.order-form-wrapper{
+    display: flex;
+    justify-content: center;
+}
+.form-item{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.form-item-title{
+    flex: 0 0 30%;
+    text-align: right;
+    margin-right: 10px;
+}
+.form-item-control{
+    display: flex;
+    flex-wrap: wrap;
+}
+.radio-item {
+    display: flex;
+    margin-right: 10px;
+}
+.checkbox-item{
+    display: flex;
+    margin-right: 10px;
+}
+input[type=number]{
+    width:250px;
+}
+select{
+    width: 250px;
+    padding: 1px 2px;
+}
+textarea{
+    box-sizing: border-box;
+    width: 250px;
+}
+input[type=tel]{
+    width: 250px;
+}
+input[type=time]{
+    width: 250px;
+    text-align: center;
+}
+
+/* button */
+.btn-wrapper{
+    justify-content: center;
+}
+.btn{
+    height: 32px;
+    padding: 4px 15px;
+    border-radius: 6px;
+    margin-right: 12px;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+button[type=submit]{
+    background-color: #269ba4;
+    color: white;
+}
+/* backToTop */
+.back-to-top{
+    display: none;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    height: 36px;
+    width: 36px;
+    padding: 10px 10px;
+    border-radius: 5px;
+    font-size: 18px;
+    color: #269ba4;
+    text-align: center;
+    background-color: #e7e7e7;
+    cursor: pointer;
+}
