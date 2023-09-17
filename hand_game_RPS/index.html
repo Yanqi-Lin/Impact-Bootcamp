@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors！</title>
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        Rock！Paper！Scissor！
+    </header>
+    <div class="container">
+        <div class="round-header">—— READY ——</div>
+        <div class="game-player">
+            <div class="computer-player">
+                <div class="gesture computer-player-gesture">
+                    ?
+                </div>
+                <p class="player-name">机器人</p>
+                <p class="computer-score">胜：0 ｜ 负：0</p>
+            </div>
+            <div class="user-player">
+                <div class="gesture user-player-gesture">
+                    ?
+                </div>
+                <p class="player-name">阿Lam</p>
+                <p class="user-score">胜：0 ｜ 负：0</p>
+            </div>
+        </div>
+        <div class="round-res"></div>
+        <div class="game-res"></div>
+        <div class="start">
+            <button class="btn" id="start-btn">开始</button>
+            <button class="btn" id="reload-btn">再来一局</button>
+        </div>
+    </div>
+    
+    <dialog id="user-select">
+        <form id="select-form">
+            <div class="form-item">
+                <label for="user-gesture">请选择要出的手势：</label>
+                <select name="user-gesture" id="user-gesture-select">
+                    <option value="rock">✊</option>
+                    <option value="scissor">✌️</option>
+                    <option value="paper">🖐️</option>
+                </select>
+            </div>
+            <div class="form-item">
+                <button class="btn" id="confirm-select-btn" type="submit">确定</button>
+            </div>
+        </form>
+    </dialog>
+
+    <script src="./index.js"></script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+/*  全局 */
+html{
+    font-size: 100%;
+}
+body{
+    min-width: 400px;
+    font-size: 1.2em;
+    background-color: #d787ff;
+}
+.btn {
+    font-size: 18px;
+    height: 36px;
+    padding: 2px 15px;
+    border-radius: 6px;
+    border: 1px solid black;
+    background-color: black;
+    color: aliceblue;
+    cursor: pointer;
+}
+/* header */
+header{
+    font: small-caps bold 1.8rem/2 sans-serif;
+    text-align: center;
+    background-color: yellow;
+}
+/* main */
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 450px;
+    justify-content: space-between;
+    padding: 120px 0;
+}
+.container .round-header{
+    font-size: 30px;
+    line-height: 60px;
+}
+.container .game-player{
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    margin: 30px;
+}
+.game-player .computer-player, .user-player{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 200px;
+    justify-content: space-between;
+}
+.game-player .gesture{
+    font-size: 130px;
+}
+.container .round-res{
+    font-size: 25px;
+    line-height: 25px;
+}
+.container .game-res{
+    font-size: 30px;
+    line-height: 60px;
+}
+#reload-btn{
+    display: none;
+}
+
+/* dialog */
+.user-select{
+    height: 100px;
+    text-align: center;
+     
+}
+.form-item{
+    height: 36px;
+    line-height: 36px;
+    display: flex;
+    justify-content: center; 
+    margin-top: 10px;
+}
+
+#user-gesture-select{
+    box-sizing: border-box;
+    height: 30px;
+    margin: 3px 0px;
+    padding: 2px;
+    font-size: 19px;
+}
+#user-select::backdrop {
+    background-color: rgba(0,0,0,.45);
+  }
