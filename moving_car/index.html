@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Moving the car with your keyboard!</title>
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="center-wrapper">
+            <form id="carParam">
+                <div class="form-item">
+                    <label for="velocity">速度：</label>
+                    <select name="velocity" id="velocity">
+                        <option value="1" id="1">1</option>
+                        <option value="2" id="2">2</option>
+                        <option value="3" id="3">3</option>
+                        <option value="4" id="4">4</option>
+                        <option value="5" id="5">5</option>
+                        <option value="6" id="6">6</option>
+                        <option value="7" id="7">7</option>
+                        <option value="8" id="8">8</option>
+                        <option value="9" id="9">9</option>
+                        <option value="10" id="10">10</option>
+                    </select>
+                </div>
+                <div class="form-item">
+                    <label for="carsType">车型：</label>
+                    <select name="carsType" id="carsType">
+                        <option value="car">🚗</option>
+                        <option value="motorcycle">🏍️</option>
+                        <option value="bicycle">🚴</option>
+                        <option value="truck">🚚</option>
+                        <option value="tractor">🚜</option>
+                    </select>
+                </div>
+                <div class="form-item">
+                    <button id="restartBtn">重新开始</button>
+                </div>
+            </form>
+        </div>
+    </header>
+    <div class="container">
+        <div class="box center-wrapper">
+            <img id="carImg" src="./images/1_car.png" alt="the car you chose">
+        </div>
+    </div>
+    
+    <script src="./index.js"></script>
+</body>
+</html>

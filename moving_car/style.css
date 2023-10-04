@@ -1,0 +1,48 @@
+/*  公共样式 */
+body{
+    background-color: yellow;
+    min-width: 750px;
+}
+.center-wrapper{
+    width:70%;
+    margin: 0 auto;
+}
+
+/* header */
+.header{
+    margin-top: 100px;
+}
+#carParam{
+    display: flex;
+    justify-content: space-around;
+}
+select{
+    height: 30px;
+    width:150px;
+    font-size: 20px;
+    text-align: center;
+}
+label{
+    font-size: 20px;
+}
+button{
+    font-size: 20px;
+    background-color: #fff;
+    border: 1px gray solid;
+    border-radius: 2px;
+}
+/* container */
+.container{
+    margin-top: 100px;
+}
+.box{
+    height: 600px;
+    position: relative;
+    border: 5px dotted purple;
+}
+#carImg{
+    height: 30px;
+    position:absolute;
+    left: 0px;
+    right: 0px;
+}
