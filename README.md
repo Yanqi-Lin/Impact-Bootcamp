@@ -11,3 +11,6 @@
 
 ### project 3 - hand game: Rock Paper Scissor
 <https://yanqi-lin.github.io/Impact-Bootcamp/hand_game_RPS/index.html>
+
+### project 4 - moving car with keyboard
+<https://yanqi-lin.github.io/Impact-Bootcamp/moving_car/index.html>
